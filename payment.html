@@ -31,39 +31,33 @@
         </nav>
     </header>
     <!--Header-->
-    <!--Contact Page-->
-    <div class="inner-banner">
+    <!-- Payment Method -->
+     <div class="inner-banner">
         <div class="text-block img-responsive">
-            <h1>Contact Us</h1>
-            <p>Contact us for any queries</p>
+            <h1>Payment Page</h1>
+            <p>You can payment us here for Products</p>
         </div>
     </div>
-    <h1 class="heading1">Contact Us Here</h1>
-    <div class="row p40">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h1>Contact Us</h1>
-                    <h3>Email: info@mywebsite.com</h3>
-                    <h3>Phone: +920000000000</h3>
-                </div>
-                <div class="col-6">
-                    <form action="" method="">
-                        <label>Full Name: </label>
-                        <input type="text" name="fullname" placeholder="Full Name">
-                        <label>Email: </label>
-                        <input type="text" name="email" placeholder="Email">
-                        <label>Phone Number: </label>
-                        <input type="text" name="phone" placeholder="Phone Number">
-                        <label>Your Message: </label>
-                        <textarea name="message" cols="70" rows="5" placeholder="Type Your Message Here"></textarea>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
+    <div class="align">
+        <div class="payment-box">
+            <h1 class="heading text-center">Payment Method</h1>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-solid fa-building-columns"></i>
+            <br><br>
+            <form action="">
+                <p>Your Account Number :</p>
+                <input type="number" name="Account number" class="account-number" placeholder="Enter Your Account No.">
+                <br><br>
+                <p>Your Account PIN :</p>
+                <input type="number" name="Password" class="password" placeholder="Enter Your PIN">
+                <br><br>
+                <a href="payment-successfull.html" class="btn-secondary">Pay Money</a>
+                <br><br>
+            </form>
         </div>
-    </div>            
-    <!--Contact Page-->
+    </div>
+
+    <!-- Payment Method -->
     <!-- Footer -->
     <footer>
         <div class="row">
@@ -117,3 +111,14 @@
        <p>Copyright &copy; 2025 | DesignWeek.pk</p> 
     </div>
     <!-- Footer -->
+    <script>    
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.left = "0";
+        }
+        function hideMenu() {
+            navlinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>

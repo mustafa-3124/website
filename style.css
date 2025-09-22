@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;  
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    box-sizing: border-box;
+}
+.logo{
+    text-align: center;
+    margin: 0 auto;
+}
+.nav-links{
+    background: #03045e;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.nav-links ul li a:hover{
+    border: 1px solid white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.banner{
+    width: 100%;
+    min-height: 68vh;
+    background: url('/images/banner.png') no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.text-block{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.btn-primary{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 36px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    border: 2px solid #03045e;
+    background: #03045e;
+    color: white;
+    transition: 0.5s;
+}
+.btn-secondary{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 36px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.btn-secondary:hover{
+    border: 2px solid #03045e;
+    background: #03045e;
+    color: white;
+    transition: 0.5s;
+}
+nav .fa-solid{
+    display: none;
+}
+@media (max-width: 768px){
+    nav .fa-bars{
+        display: block;
+}
+    .nav-links{
+        position: absolute;
+        background: #03045e;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        top: 0;
+        left: -200px;
+        transition: 1s;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links .fa-solid{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .fa-bars{
+        position: absolute;
+        left: 10px;
+        top: 28px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+/*Grid System*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px; 
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        width: 1100px;
+    }
+}
+/*Grid System*/
+.heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 40px 0px 20px 0px;
+    text-decoration: underline;
+}
+.text-center{
+    text-align: center;
+}
+.ad-banner{
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.heading1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+}
+footer{
+    background: #03045e;
+    padding: 80px 0px;
+    color: white;
+}
+.heading2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.footer-menu li{
+    list-style: none;
+    padding: 10px 16px;
+    position: relative;
+}
+.copyright{
+    background: black;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+/* About Us */
+.inner-banner{
+    width: 100%;
+    min-height: 30vh;
+    background: url('/images/b2.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+}
+.p40{
+    padding: 40px;
+}
+.sidebar{
+    padding-left: 50px;
+}
+.blog-area{
+    border-right: 1px solid #aaa;
+}
+.blog-item{
+    padding-bottom: 60px;
+}
+.product-name{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+.price{
+    font-size: 28px;
+    color: #03045e;
+    border: 1px solid #03045e;
+    background: transparent;
+}
+.btn-shop{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #0077b6;
+    padding: 12px 36px;
+    font-size: 18px;
+    background: #0077b6;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-shop:hover{
+    border: 2px solid #0077b6;
+    background: white;
+    color: #0077b6;
+    transition: 0.5s;
+}
+.product-card:hover{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #0077b6;
+    padding: 12px 36px;
+    font-size: 18px;
+    background: #0077b6;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    border: 2px solid #0077b6;
+    background: white;
+    color: #0077b6;
+    transition: 0.5s;
+}
+.fa-brands{
+    font-size: 50px;
+}
+.contact-info{
+    font-size: 20px;
+    text-align: center;
+}
+.account-number{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+}
+.fa-building-columns{
+    font-size: 50px;
+}
+.payment-box{
+    width: 500px;
+    text-align: center;
+}
+.align{
+    margin-left: 600px;
+    margin-right: 588px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+.password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+}
+.successful{
+    background-color: #03045e;
+    color: white;
+}
